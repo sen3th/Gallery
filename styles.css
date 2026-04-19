@@ -11,9 +11,13 @@ body{
 
 .gallery-item{
     overflow: hidden;
-    border-radius: 12px;
+    border-radius: 16px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 4/3;
 }
 
 .gallery-item img{
@@ -21,7 +25,8 @@ body{
     height: 200px;
     object-fit: cover;
     display: block;
-
+    border-radius: 12px;
+    background: beige;
 }
 .item-description{
     width: 100%;
