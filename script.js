@@ -7,7 +7,7 @@ document.querySelectorAll('.gallery-item').forEach(item=>{
     });
 });
 
-document.getElementById('.modal .close').onclick=function(){
+document.querySelector('.modal .close').onclick=function(){
     document.getElementById('image-modal').style.display = 'none';
 }
 
