@@ -95,7 +95,7 @@ body{
     margin-bottom: 28px;
 }
 
-.title-subtitle{
+.title-subtitle1{
     text-transform: uppercase;
     letter-spacing: 0.16em;
     font-size: 0.75rem;
@@ -107,4 +107,11 @@ body{
     font-size: clamp(2.5rem, 5vw, 5rem);
     line-height: 0.95;
     margin: 0;
+}
+
+.subtitle2{
+    max-width: 520px;
+    margin: 12px 0 0;
+    font-size: 1rem;
+    color: #635850;
 }
