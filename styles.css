@@ -81,3 +81,12 @@ body{
     margin: 0;
     color: #5f554e;
 }
+
+.close{
+    position: absolute;
+    top: 16px;
+    right: 18px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #2e2722;
+}
