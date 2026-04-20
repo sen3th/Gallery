@@ -9,16 +9,17 @@
 <body>
     <h1>Gallery</h1>
     <div class="gallery">
-        <div class="gallery-item">
+        <div class="gallery-item" data-title="Image title" data-description="random description ahh">
             <img src="/assets/photos/image0.jpeg">
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item" data-title="no title" data-description="description 2">
             <img src="/assets/photos/image0.jpeg">
         </div>
     </div>
 
-    <div class="modal">
+    <div class="modal" id="image-modal">
         <div class="modal-stuff">
+            <span class="close">&times;</span>
             <img id="modal-image" src="">
             <h2 id="modal-title"></h2>
             <p id="modal-description"></p>
