@@ -90,3 +90,15 @@ body{
     cursor: pointer;
     color: #2e2722;
 }
+
+.title{
+    margin-bottom: 28px;
+}
+
+.title-subtitle{
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 0.75rem;
+    color: #094a33;
+    margin: 0 0 8px;
+}
