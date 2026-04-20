@@ -71,3 +71,13 @@ body{
     display: block;
     margin-bottom: 16px;
 }
+
+.modal-stuff h2{
+    margin: 0 0 8px;
+    font-size: 1.5rem;
+}
+
+.modal-stuff p{
+    margin: 0;
+    color: #5f554e;
+}
