@@ -29,6 +29,11 @@ body{
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
+.gallery-item:hover img{
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.14);
+}
+
 .gallery-item figcaption{
     padding: 10px 2px 0;
 }
