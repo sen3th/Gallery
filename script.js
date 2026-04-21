@@ -3,7 +3,7 @@ document.querySelectorAll('.gallery-item').forEach(item=>{
         document.getElementById('modal-image').src = this.querySelector('img').src;
         document.getElementById('modal-title').textContent = this.dataset.title || '';
         document.getElementById('modal-description').textContent = this.dataset.description || '';
-        document.getElementById('image-modal').style.display = 'block';
+        document.getElementById('image-modal').style.display = 'flex';
     });
 });
 
