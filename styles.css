@@ -125,3 +125,17 @@ body{
     font-size: 1rem;
     color: #635850;
 }
+
+@media (max-width: 1100px){
+    .gallery{column-count: 3;}
+}
+
+@media(max-width: 800px){
+    .gallery{column-count: 2;}
+}
+
+@media(max-width: 520px){
+    .gallery{column-count: 1;}
+    .modal{ padding: 12px;}
+    .modal-stuff img{max-height: calc(100vh - 120px);}
+}
