@@ -12,10 +12,10 @@ function openModalByIndex(index){
     const img = item.querySelector('img');
 
     modalImage.src = img.src;
-    modalTitle.textContent = item.dataset.title || '';
-    modalDescription.textContent = item.dataset.description || '';
+    modalTitle.textContent = item.dataset.title || captionTitle;
+    modalDescription.textContent = item.dataset.description || captionDescription;
     modal.style.display = 'flex';
-    document.body.style.overflow = 'hidden'; 
+    document.body.style.overflow = 'hidden';
 }
 
 document.querySelectorAll('.gallery-item').forEach((item, index)=>{
