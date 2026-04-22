@@ -121,7 +121,7 @@ body{
 
 .subtitle2{
     max-width: 520px;
-    margin: 12px 0 0;
+    margin: 12px 0 0; 
     font-size: 1rem;
     color: #635850;
 }
@@ -138,4 +138,17 @@ body{
     .gallery{column-count: 1;}
     .modal{ padding: 12px;}
     .modal-stuff img{max-height: calc(100vh - 120px);}
+}
+
+.navigation-button{
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
 }
