@@ -3,7 +3,7 @@ const modal = document.getElementById('image-modal');
 const modalImage = document.getElementById('modal-image');
 const modalTitle = document.getElementById('modal-title');
 const modalDescription = document.getElementById('modal-description');
-const closeButton = document.querySelector('.modal .close');
+const closeButton = document.querySelector('.close');
 let currentItem =0;
 
 function openModalByIndex(index){
@@ -32,3 +32,9 @@ document.getElementById('image-modal').onclick=function(e){
 
 document.getElementById('previous').addEventListener('click', () => openModalByIndex(currentItem - 1))
 document.getElementById('next').addEventListener('click', () => openModalByIndex(currentItem + 1))
+
+document.addEventListener('keydown', (e) => {
+    if (modal.style.display !== 'flex') return;
+    if (e.key === 'ArrowLeft') openModalByIndex(currentItem - 1);
+    if (e.key === 'ArrowRight') openModalByIndex(currentItem + 1);
+})
