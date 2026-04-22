@@ -152,3 +152,11 @@ body{
     font-size: 1.4rem;
     cursor: pointer;
 }
+
+.previous{
+    left: 12px;
+}
+
+.next{
+    right: 12px;
+}
