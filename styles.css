@@ -171,3 +171,7 @@ body{
     cursor: pointer;
     font-size: 0.9rem;
 }
+
+.retro-toggle:hover{
+    background: #e6d5be;
+}

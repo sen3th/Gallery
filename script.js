@@ -6,6 +6,7 @@ const modalDescription = document.getElementById('modal-description');
 const closeButton = document.querySelector('.close');
 const previousButton = document.getElementById('previous');
 const nextButton = document.getElementById('next');
+const retroToggle = document.getElementById('retro-toggle');
 let currentItem =0;
 
 function openModalByIndex(index){
@@ -52,4 +53,17 @@ document.addEventListener('keydown', (e) => {
     if (modal.style.display !== 'flex') return;
     if (e.key === 'ArrowLeft') openModalByIndex(currentItem - 1);
     if (e.key === 'ArrowRight') openModalByIndex(currentItem + 1);
+})
+
+function updateRetroButton() {
+    const isRetro = document.body.classList.contains('retro');
+    retroToggle.textContent = isRetro ? 'Retro: on' : 'Retro: off';
+}
+
+updateRetroButton();
+
+retroToggle.addEventListener('click', ()=>{
+    document.body.classList.toggle('retro');
+    const isRetro = document.body.classList.contains('retro');
+    updateRetroButton();
 })
