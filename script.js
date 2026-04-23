@@ -4,6 +4,8 @@ const modalImage = document.getElementById('modal-image');
 const modalTitle = document.getElementById('modal-title');
 const modalDescription = document.getElementById('modal-description');
 const closeButton = document.querySelector('.close');
+const previousButton = document.getElementById('previous');
+const nextButton = document.getElementById('next');
 let currentItem =0;
 
 function openModalByIndex(index){
@@ -11,27 +13,40 @@ function openModalByIndex(index){
     const item = items[currentItem];
     const img = item.querySelector('img');
 
+    const captionTitle = item.querySelector('figcaption h2')?.textContent || '';
+    const captionDescription = item.querySelector('figcaption p')?.textContent?.trim() || '';
+
     modalImage.src = img.src;
-    modalTitle.textContent = item.dataset.title || captionTitle;
-    modalDescription.textContent = item.dataset.description || captionDescription;
+    modalTitle.textContent = captionTitle;
+    modalDescription.textContent = captionDescription;
     modal.style.display = 'flex';
     document.body.style.overflow = 'hidden';
 }
 
-document.querySelectorAll('.gallery-item').forEach((item, index)=>{
-    item.addEventListener('click',()=> openModalByIndex(index));
+function closeModal(){
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+}
+
+items.forEach((item, index) => {
+    item.addEventListener('click', ()=> openModalByIndex(index));
 })
 
-document.querySelector('.modal .close').onclick=function(){
-    document.getElementById('image-modal').style.display = 'none';
-}
+closeButton.addEventListener('click', closeModal);
 
-document.getElementById('image-modal').onclick=function(e){
-    if (e.target === this) this.style.display = 'none';
-}
+modal.addEventListener('click', (e)=>{
+    if (e.target === modal) closeModal();
+})
 
-document.getElementById('previous').addEventListener('click', () => openModalByIndex(currentItem - 1))
-document.getElementById('next').addEventListener('click', () => openModalByIndex(currentItem + 1))
+previousButton.addEventListener('click', (e)=>{
+    e.stopPropagation();
+    openModalByIndex(currentItem - 1);
+})
+
+nextButton.addEventListener('click', (e)=>{
+    e.stopPropagation();
+    openModalByIndex(currentItem + 1);
+})
 
 document.addEventListener('keydown', (e) => {
     if (modal.style.display !== 'flex') return;
