@@ -6,7 +6,7 @@ const modalDescription = document.getElementById('modal-description');
 const closeButton = document.querySelector('.close');
 const previousButton = document.getElementById('previous');
 const nextButton = document.getElementById('next');
-const retroToggle = document.getElementById('retro-toggle');
+const darkToggle = document.getElementById('dark-toggle');
 let currentItem =0;
 
 function openModalByIndex(index){
@@ -55,15 +55,14 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowRight') openModalByIndex(currentItem + 1);
 })
 
-function updateRetroButton() {
-    const isRetro = document.body.classList.contains('retro');
-    retroToggle.textContent = isRetro ? 'Retro: on' : 'Retro: off';
+function updateDarkButton() {
+    const isDark = document.body.classList.contains('dark');
+    darkToggle.textContent = isDark ? 'Dark Mode: on' : 'Dark Mode: off';
 }
 
-updateRetroButton();
+updateDarkButton();
 
-retroToggle.addEventListener('click', ()=>{
-    document.body.classList.toggle('retro');
-    const isRetro = document.body.classList.contains('retro');
-    updateRetroButton();
+darkToggle.addEventListener('click', () =>{
+    document.body.classList.toggle('dark');
+    updateDarkButton();
 })

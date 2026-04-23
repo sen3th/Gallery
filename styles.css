@@ -161,25 +161,23 @@ body{
     right: 12px;
 }
 
-.retro-toggle{
+.theme-toggle{
     margin-top: 14px;
     padding: 8px 12px;
-    border: 1px solid #847468;
-    background: #f1e6d8;
+    border: 1px solid #62564d;
+    background: #2e2e2d;
     color: #2d2622;
     border-radius: 999px;
     cursor: pointer;
     font-size: 0.9rem;
 }
 
-.retro-toggle:hover{
-    background: #e6d5be;
+.theme-toggle:hover{
+    background: #7d776e;
 }
 
-body.retro{
-    background: #e8ddcf;
+body.dark{
+    background: #0c0c0c;
+    color: #f3efe8;
 }
 
-body.retro .gallery-item img{
-    filter: contrast(1.1) saturate(0.88) hue-rotate(-8deg) sepia(0.15);
-}
