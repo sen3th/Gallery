@@ -181,3 +181,18 @@ body.dark{
     color: #f3efe8;
 }
 
+body.dark .page{
+    color: #f3efe8;
+}
+
+body.dark .title-subtitle1{
+    color: #8fbf9b;
+}
+
+body.dark .subtitle2{
+    color: #c0b7ad;
+}
+
+body.dark .gallery-item p{
+    color: #c9c0b8;
+}
