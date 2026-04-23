@@ -175,3 +175,11 @@ body{
 .retro-toggle:hover{
     background: #e6d5be;
 }
+
+body.retro{
+    background: #e8ddcf;
+}
+
+body.retro .gallery-item img{
+    filter: contrast(1.1) saturate(0.88) hue-rotate(-8deg) sepia(0.15);
+}
