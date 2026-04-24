@@ -160,3 +160,59 @@ body{
 .next{
     right: 12px;
 }
+
+.theme-toggle{
+    margin-top: 14px;
+    padding: 8px 12px;
+    border: 1px solid #62564d;
+    background: #9b9b95;
+    color: #2d2622;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.theme-toggle:hover{
+    background: #7d776e;
+}
+
+body.dark{
+    background: #0c0c0c;
+    color: #f3efe8;
+}
+
+body.dark .page{
+    color: #f3efe8;
+}
+
+body.dark .title-subtitle1{
+    color: #8fbf9b;
+}
+
+body.dark .subtitle2{
+    color: #c0b7ad;
+}
+
+body.dark .gallery-item p{
+    color: #c9c0b8;
+}
+
+body.dark .modal{
+    background: rgba(0,0,0,0.82);
+}
+
+body.dark .modal-stuff h2{
+    color: #f5efe8;
+}
+
+body.dark .modal-stuff p{
+    color: #f5efe8;
+}
+
+body.dark .modal-stuff{
+    background:  #181818;
+}
+
+body.dark .close{
+    color: #f5efe8;
+}

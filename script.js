@@ -6,6 +6,7 @@ const modalDescription = document.getElementById('modal-description');
 const closeButton = document.querySelector('.close');
 const previousButton = document.getElementById('previous');
 const nextButton = document.getElementById('next');
+const darkToggle = document.getElementById('dark-toggle');
 let currentItem =0;
 
 function openModalByIndex(index){
@@ -52,4 +53,16 @@ document.addEventListener('keydown', (e) => {
     if (modal.style.display !== 'flex') return;
     if (e.key === 'ArrowLeft') openModalByIndex(currentItem - 1);
     if (e.key === 'ArrowRight') openModalByIndex(currentItem + 1);
+})
+
+function updateDarkButton() {
+    const isDark = document.body.classList.contains('dark');
+    darkToggle.textContent = isDark ? 'Dark Mode: on' : 'Dark Mode: off';
+}
+
+updateDarkButton();
+
+darkToggle.addEventListener('click', () =>{
+    document.body.classList.toggle('dark');
+    updateDarkButton();
 })
