@@ -196,3 +196,23 @@ body.dark .subtitle2{
 body.dark .gallery-item p{
     color: #c9c0b8;
 }
+
+body.dark .modal{
+    background: rgba(0,0,0,0.82);
+}
+
+body.dark .modal-stuff h2{
+    color: #f5efe8;
+}
+
+body.dark .modal-stuff p{
+    color: #f5efe8;
+}
+
+body.dark .modal-stuff{
+    background:  #181818;
+}
+
+body.dark .close{
+    color: #f5efe8;
+}
